@@ -1,0 +1,20 @@
+def count(x):
+    if x[-1] == '.':
+        x =x[0:len(x) - 1]
+   
+   
+    if x in n:
+        n[x] += 1
+   
+    else:
+        n.update({x: 1})
+l = 'Aditya Degree and  Aditya Engineering Institution'
+n = {}
+lst = l.split()
+for x in lst:
+    count(x)
+for allKeys in n:
+    print ("repitason of ", allKeys, end = " ")
+    print (":", end = " ")
+    print (n[allKeys], end = " ")
+    print() 
